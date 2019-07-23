@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输入要转换成二维码的信息："
+        android:textSize="20sp"/>
+    <EditText
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:background="@drawable/et_bg"
+        android:id="@+id/edt"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <ImageView
+        android:id="@+id/imgv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"/>
+    <Button
+        android:id="@+id/btn"
+        android:text="生成二维码"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
